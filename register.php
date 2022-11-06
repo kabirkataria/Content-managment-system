@@ -2,56 +2,60 @@
 <html lang="en">
 
 <head>
-    <title>Nvabr</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h-100-c{
+            height: 90vh;
+        }
+        body{
+            background-color: rgba(0,0,0,0.1) !important;
+        }
+        .backimg{
+            height: 500px;
+        }
+        
+    </style>
 </head>
 
 <body>
+    <?php include "./navbar.php" ?>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">CMS</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-            </ul>
+    <div class="d-flex flex-column align-items-center w-100 h-100-c bg-grey ">
+        <div class="mt-5">
+            <h1>Register Now</h1>
         </div>
-    </nav>
-
-    <div class="container">
-        <form>
-            <h2>Register User</h2>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter name">
-                
+        <div class="d-flex flex-wrap mx-5 mt-md-3 w-75 border bg-white p-md-5 p-4 rounded">
+            <div class=" w-50 backimg" style="background-image: url(https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg); background-size: cover;
+            background-position: center;">
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+            <div class=" w-50 w-md-50 px-md-3 my-md-5">
+                <form class="my-3">
+                    <div class="my-3">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input placeholder="Please enter your name" type="text" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="my-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input placeholder="Please enter your email id" type="email" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="my-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input placeholder="Please enter your password" type="password" class="form-control"
+                            id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary my-3">Register</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-           
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
     </div>
 
+  
 </body>
 
 </html>
